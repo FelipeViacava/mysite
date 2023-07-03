@@ -35,19 +35,19 @@ WORK_EXPERIENCE = [
         "company": "Santander Brasil",
         "position": "Risk Analyst I",
         "span": "Feb/23 - Present",
-        "desc": "Using big data to support decision making on the bank's retail credit policies."
+        "desc": "Using big data to support decision-making regarding the bank's retail credit policies."
     },
     {
         "company": "Claro Brasil",
         "position": "Data Analyst",
         "span": "May/22 - Nov/22",
-        "desc": "Implementing data quality routines in the company's internal website along with front and back end developers."
+        "desc": "Implemented data quality routines in the company's internal website along with front and back end developers."
     },
     {
         "company": "Blue Media Services",
         "position": "Assistant Data Scientist",
         "span": "Apr/21 - Jan/22",
-        "desc": "Data analysis to support decision making along with Machine Learning model building and evaluation."
+        "desc": "Data analysis to support decision-making along with Machine Learning pipeline building and evaluation."
     }
 ]
 SCHOOLS_ATTENDED = [
@@ -73,10 +73,18 @@ CERTIFICATES = [
 ]
 HARD_SKILLS = [
     {
+        "name": "Mathematics, Statistics and Machine Learning",
+        "desc": """
+            Well-versed in the mathematical aspects of Machine Learning algorithms such as Gradient Boosted Trees,
+            Random Forests and Linear Models, enabling effective implementation and interpretation of these algorithms, as well as building
+            solid data processing pipelines for later deployment.
+        """
+    },
+    {
         "name": "Python",
         "desc": """
             Solid work and academic experience using Python for Machine Learning, 
-            Data Analysis and Numerical Optimization using Scikit-learn, Pandas, PySpark and Seaborn.
+            Data Processing, Data Analysis and Numerical Optimization using Scikit-learn, Pandas, PySpark and Seaborn.
             Web App development using Streamlit and Flask.
         """
     },
