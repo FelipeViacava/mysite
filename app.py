@@ -74,14 +74,29 @@ HARD_SKILLS = [
         "desc": """
             Solid work and academic experience using Python for Machine Learning, 
             Data Analysis and Numerical Optimization using Scikit-learn, Pandas, PySpark and Seaborn.
-            Web App development using Streamlit.
+            Web App development using Streamlit and Flask.
         """
     },
     {
         "name": "R programming",
         "desc": """
-            Academic experience with data analysis and Machine Learning using tidymodels, tidyverse and ggplot.
+            Academic experience with data analysis and Machine Learning using tidymodels, tidyverse and ggplot2.
         """
+    },
+    {
+        "name": "SQL and Excel",
+        "desc": """
+            Solid work experience using SQL to extract summarized datasets for further analysis with Excel
+            (or Python if PySpark is not available)
+        """
+    },
+    {
+        "name": "Git",
+        "desc": "Code sharing and version control with Git (using Github and Bash)"
+    },
+    {
+        "name": "Languages",
+        "desc": "Portuguese (mother tongue), English (advanced) and Spanish (beginner)"
     }
 ]
 
