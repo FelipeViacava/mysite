@@ -2,6 +2,8 @@
 import streamlit as st
 from pathlib import Path
 from PIL import Image
+from datetime import datetime
+import numpy as np
 
 # ----- PATH SETTINGS ----- #
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -13,9 +15,10 @@ profile_pic = current_dir / "assets" / "profile-pic.png"
 PAGE_TITLE = "Felipe Viacava | Digital CV"
 PAGE_ICON = ":wave:"
 NAME = "Felipe Viacava"
-DESCRIPTION = """
+AGE = str(int(np.floor(((datetime.today() - datetime(year=1997,month=3,day=7)).days)/365)))
+DESCRIPTION = f"""
 Credit Risk Analyst at Santander and Data Science Graduate Student at Insper. \n
-São Paulo, Brazil
+São Paulo, Brazil | {AGE}y
 """
 EMAIL = "felipeviacava1@gmail.com"
 SOCIAL_MEDIA = {
@@ -86,17 +89,20 @@ HARD_SKILLS = [
     {
         "name": "SQL and Excel",
         "desc": """
-            Solid work experience using SQL to extract summarized datasets for further analysis with Excel
-            (or Python if PySpark is not available)
+            Solid work experience using SQL to extract summarized datasets for further analysis with Excel.
         """
     },
     {
         "name": "Git",
-        "desc": "Code sharing and version control with Git (using Github and Bash)"
+        "desc": "Code sharing and version control with Git."
+    },
+    {
+        "name": "Linux / WSL",
+        "desc": "Experience with WSL as main operating system for programming and creating virtual environments."
     },
     {
         "name": "Languages",
-        "desc": "Portuguese (mother tongue), English (advanced) and Spanish (beginner)"
+        "desc": "Portuguese (mother tongue), English (advanced) and Spanish (beginner)."
     }
 ]
 
@@ -144,6 +150,7 @@ for work in WORK_EXPERIENCE:
             {work["desc"]}
         """
     )
+st.write("---")
 # schools attended
 st.subheader("Schools Attended")
 for school in SCHOOLS_ATTENDED:
@@ -153,6 +160,7 @@ for school in SCHOOLS_ATTENDED:
             {school["degree"]}
         """
     )
+st.write("---")
 # certificates
 st.subheader("Certificates")
 for certificate in CERTIFICATES:
@@ -162,6 +170,7 @@ for certificate in CERTIFICATES:
             {certificate["desc"]}
         """
     )
+st.write("---")
 # hard skills
 st.subheader("Hard Skills")
 for skill in HARD_SKILLS:
